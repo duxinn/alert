@@ -32,7 +32,8 @@
 |sign |是  |string | 消息签名    |
 
 - 以下参数为生产环境建议参数，
-必选参数仅为为  alert_level, alert_time, alert_business。
+- 必选参数仅为为  alert_level, alert_time, alert_business。
+
 
 |参数名|是否必须|类型|在发送的消息中翻译为 |说明|
 |:----    |:---|:----- |-----   |
@@ -44,7 +45,9 @@
 |alert_function |否 |string |告警功能 |告警功能，比如 'dna 主业务'|
 |exception_spec |否 |string |异常说明 |异常说明，比如 '第 33 分区，数据延时 231s' |
 
+
 - 以下参数为预留参数，可选
+
 
 |参数名|是否必须|类型|在发送的消息中翻译为 |说明|
 |:----    |:---|:----- |-----   |
