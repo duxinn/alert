@@ -68,7 +68,7 @@
 ```
 data = {
         'id' : 'xxx',
-        'level' : 'x',
+        'level' : 'xx',
         'dep' : 'xxx',
         'env' : 'xxx',
         'alert_level' : '高',
@@ -84,13 +84,13 @@ def send_v2(data):
 		sign_string_b.update('YYLmfY6IRdjZMQ1'.encode('utf-8'))
 		data.setdefault("sign", sign_string_b.hexdigest())
 		data = json.dumps(data)
-		resp = requests.post('http://osa.shuzilm.cn/alarm_v2', data=data)
+		resp = requests.post('http://xxx', data=data)
 		return resp
 resp = send_v2(data)
 print(resp)  # <Response [200]>
 print(resp.text)  # {"code": 0}
 ```
-- 注意 post('http://osa.shuzilm.cn/alarm_v2', data=data),此处　alarm_v2　后面不能加 /
+- 注意 post('http://xxx', data=data),此处　alarm_v2　后面不能加 /
  将会发送给所有者为 chenmin，level 为 3 的告警接群，收到的信息将会如下展示：
 ```
 部门:xx
@@ -136,6 +136,6 @@ json 格式解析失败  1002
 邮件发送消息失败  4005
 
 ## 日常维护：
-当告警接收人员中有员工离职时，需要在配置地址：http://osa.du.com/alert_info　及时把离职员工从群接收者中删除。否则当系统重启或聊天群id过期后，重新建立聊天群时，会返回 4001 钉钉创建聊天群失败。
+当告警接收人员中有员工离职时，需要在配置地址：http://xxx　及时把离职员工从群接收者中删除。否则当系统重启或聊天群id过期后，重新建立聊天群时，会返回 4001 钉钉创建聊天群失败。
 ## 备注:
 - 暂无
