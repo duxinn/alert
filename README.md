@@ -8,11 +8,11 @@
 - markdown（钉钉）
 
 ## 链接地址
-- URL : http://osa.shuzilm.cn/alarm_v2
+- URL : http://xxxx
 
 ## 服务配置:
 - 使用前需要在页面配置相应的接收人等信息
-- 配置地址：http://osa.du.com/alert_info
+- 配置地址：http://xxx
 - 说明：配置好后，owner 的姓名就是 发送告警时的 id，level 是用来区别同一 owner 所拥有的不同告警组
 
 ## 请求方式
@@ -67,10 +67,10 @@
 请求
 ```
 data = {
-        'id' : 'chenmin',
-        'level' : '3',
-        'dep' : 'du-op',
-        'env' : 'prod',
+        'id' : 'xxx',
+        'level' : 'x',
+        'dep' : 'xxx',
+        'env' : 'xxx',
         'alert_level' : '高',
         'alert_time' : '2018-01-1 01:01:01',
         'alert_business' : '陈敏测试alert_business',
@@ -93,8 +93,8 @@ print(resp.text)  # {"code": 0}
 - 注意 post('http://osa.shuzilm.cn/alarm_v2', data=data),此处　alarm_v2　后面不能加 /
  将会发送给所有者为 chenmin，level 为 3 的告警接群，收到的信息将会如下展示：
 ```
-部门:运维
-环境:生产环境
+部门:xx
+环境:xx
 告警业务:陈敏测试alert_business
 告警功能:陈敏测试alert_function
 告警等级:高

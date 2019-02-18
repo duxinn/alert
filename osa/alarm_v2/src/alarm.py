@@ -29,10 +29,10 @@ RECORD_LOG_STATUS = "Y"  # 是否记录日志 Y 或者 N
 LOG_FILE_PATH = ""  # 日志文件绝对路径，如果为空则默认存储到项目的 logs 目录下
 
 DB_CONFIG = {       # 数据库配置
-    'host': '172.17.146.238',
+    'host': 'xxx',
     'port': 3306,
     'user': 'root',
-    'passwd': 'Sui@911120',
+    'passwd': 'xxx',
     'db': 'du_alarm_app',
     'charset': 'utf8',
 }
@@ -42,30 +42,30 @@ DB_CONFIG = {       # 数据库配置
 邮箱配置
 """
 
-MAIL_HOST = "mail.shuzilm.cn"  # 邮箱接口地址
-MAIL_SENDER = "it@shuzilm.cn"  # 邮件发送用户
-MAIL_USERNAME = "it@shuzilm.cn"  # 登陆邮箱用户名
-MAIL_PASSWORD = "Puyu7636"  # 登陆邮箱密码
+MAIL_HOST = "xxx"  # 邮箱接口地址
+MAIL_SENDER = "xxx"  # 邮件发送用户
+MAIL_USERNAME = "xxx"  # 登陆邮箱用户名
+MAIL_PASSWORD = "xxx"  # 登陆邮箱密码
 
 
 """
 钉钉配置
 """
 
-DING_CORP_ID = "ding536db086d3f7648e"  # 钉钉企业编号
-DING_CORP_SECRET = "X17Dkb0ZwD6JjhJ92Z3WdsUBAX6HGCzVLeB-oku8SiQF1eAhJ8VDJHMXoW5Z3muh"  # 钉钉企业密钥
+DING_CORP_ID = "xxx"  # 钉钉企业编号
+DING_CORP_SECRET = "xxx"  # 钉钉企业密钥
 
 
 """
 微信配置（WeChat 在这里简称 WC）
 """
 
-WC_CORP_ID = "wxee18c29ced9a8c63"  # 微信企业编号
-WC_CORP_SECRET = "7BtRqm6U7s34sBUlqBAcNyIzQ2kmeMkc_AqJINVVzyfJSJ_K7pXPTvMKcLTd1BmX"  # 微信企业密钥
+WC_CORP_ID = "xxx"  # 微信企业编号
+WC_CORP_SECRET = "xxx"  # 微信企业密钥
 
 
 # 公共账号　和　ｉｔ　这两个账号的钉钉好都是运维部门ｉｔ的钉钉号, IT_ID　为其钉钉号用于创建所有钉钉告警群
-IT_ID = '0167570929777239589'
+IT_ID = 'xxx'
 
 
 executor = ThreadPoolExecutor(2)

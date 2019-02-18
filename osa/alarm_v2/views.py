@@ -27,19 +27,19 @@ TIME_VALUE_SRV = 60  # 云端告警时间范围
 THRESHOLD_VALUE_OP = 3  # 运维组告警阈值
 TIME_VALUE_OP = 60  # 运维组告警时间范围
 
-SALT_DU_OP = 'YYLmfY6IRdjZMQ1'
-SALT_DU_SRV = 'YYLmfY6IRdjZMQ1'
-SALT_DU_FE = 'YYLmfY6IRdjZMQ1'
-SALT_DU_DA = 'YYLmfY6IRdjZMQ1'
+SALT_DU_OP = 'xxx'
+SALT_DU_SRV = 'xxx'
+SALT_DU_FE = 'xxx'
+SALT_DU_DA = 'xxx'
 
 RECORD_LOG_STATUS = "Y"  # 是否记录日志 Y 或者 N
 LOG_FILE_PATH = ""  # 日志文件绝对路径，如果为空则默认存储到项目的 logs 目录下
 
 DB_CONFIG = {       # 数据库配置
-    'host': '172.17.146.238',
+    'host': 'xxx',
     'port': 3306,
     'user': 'root',
-    'passwd': 'Sui@911120',
+    'passwd': 'xxx',
     'db': 'du_alarm_app',
     'charset': 'utf8',
 }
